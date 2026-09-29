@@ -1,0 +1,3096 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "title": "Orange Xiangqi repetition tests by Daniel Tan and Xiaofan Sun",
+    "url": "https://github.com/danieltan1517/orange-xiangqi/blob/e30960b4924710dc0fb332bb4cb5955cc04cc1f3/tests.jai",
+    "commit": "e30960b4924710dc0fb332bb4cb5955cc04cc1f3",
+    "paper": "https://arxiv.org/html/2412.17334v1",
+    "licenseNote": "The public source repository has no declared LICENSE; this file records only factual board positions, moves, and rulings with attribution, not source code.",
+    "format": "FEN ranks run black top to red bottom; ICCS a0 is red bottom-left; source win/loss is relative to side to move after the listed moves."
+  },
+  "cases": [
+    {
+      "id": "orange-001",
+      "sourceLine": 330,
+      "diagramHint": null,
+      "fen": "4ka3/4a4/4b4/p7p/9/4C4/4P4/4B4/3K5/3Ac1B2 w - - 0 1",
+      "moves": [],
+      "sourceJudgment": "undecided",
+      "expectedWinner": null
+    },
+    {
+      "id": "orange-002",
+      "sourceLine": 333,
+      "diagramHint": null,
+      "fen": "c2a1k3/2c1a2R1/b6P1/8p/9/9/9/9/4K4/9 w - - 0 1",
+      "moves": [
+        "h8h9",
+        "f9f8",
+        "h9h8",
+        "f8f9",
+        "h8h9",
+        "f9f8"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-003",
+      "sourceLine": 334,
+      "diagramHint": null,
+      "fen": "c2a1k3/2c1a2R1/b6P1/8p/9/9/9/9/4K4/9 w - - 0 1",
+      "moves": [
+        "h8h9",
+        "f9f8",
+        "h9h8",
+        "f8f9",
+        "h8h9",
+        "f9f8",
+        "h9h8"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-004",
+      "sourceLine": 335,
+      "diagramHint": null,
+      "fen": "9/4k4/9/9/9/9/9/9/2p6/3K1RBc1 w - - 0 1",
+      "moves": [
+        "f0e0",
+        "e8f8",
+        "e0f0",
+        "f8e8",
+        "f0e0",
+        "e8f8",
+        "e0f0"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-005",
+      "sourceLine": 336,
+      "diagramHint": null,
+      "fen": "9/4k4/9/9/9/9/9/9/2p6/3K1RBc1 w - - 0 1",
+      "moves": [
+        "f0e0",
+        "e8f8",
+        "e0f0",
+        "f8e8",
+        "f0e0",
+        "e8f8"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-006",
+      "sourceLine": 337,
+      "diagramHint": null,
+      "fen": "4R4/3k5/5R3/9/9/2B6/n8/3pB4/4p4/3K5 w - - 0 1",
+      "moves": [
+        "e9d9",
+        "d8e8",
+        "d9e9",
+        "e8d8",
+        "e9d9",
+        "d8e8"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-007",
+      "sourceLine": 338,
+      "diagramHint": null,
+      "fen": "4R4/3k5/5R3/9/9/2B6/n8/3pB4/4p4/3K5 w - - 0 1",
+      "moves": [
+        "e9d9",
+        "d8e8",
+        "d9e9",
+        "e8d8",
+        "e9d9",
+        "d8e8",
+        "d9e9"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-008",
+      "sourceLine": 339,
+      "diagramHint": null,
+      "fen": "4R4/3k5/5R3/9/9/2B6/n8/3pB4/4p4/3K5 w",
+      "moves": [
+        "f7f8",
+        "d8d7",
+        "f8f7",
+        "d7d8",
+        "f7f8",
+        "d8d7",
+        "f8f7"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-009",
+      "sourceLine": 340,
+      "diagramHint": null,
+      "fen": "4R4/3k5/5R3/9/9/2B6/n8/3pB4/4p4/3K5 w",
+      "moves": [
+        "f7f8",
+        "d8d7",
+        "f8f7",
+        "d7d8",
+        "f7f8",
+        "d8d7",
+        "f8f7",
+        "d7d8"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-010",
+      "sourceLine": 341,
+      "diagramHint": null,
+      "fen": "3akr3/5c3/1P2b4/4R4/9/9/9/9/9/4CK3 w - - 0 1",
+      "moves": [
+        "e6e7",
+        "f8e8",
+        "e7f7",
+        "e8f8",
+        "f7e7",
+        "f8e8",
+        "e7f7"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-011",
+      "sourceLine": 342,
+      "diagramHint": null,
+      "fen": "3akr3/5c3/1P2b4/4R4/9/9/9/9/9/4CK3 w - - 0 1",
+      "moves": [
+        "e6e7",
+        "f8e8",
+        "e7f7",
+        "e8f8",
+        "f7e7",
+        "f8e8",
+        "e7f7",
+        "e8f8"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-012",
+      "sourceLine": 345,
+      "diagramHint": null,
+      "fen": "5c3/8R/4k2P1/3P5/5P3/6P2/5pN2/5A3/4CK3/6rn1 w",
+      "moves": [
+        "f5e5",
+        "f3e3",
+        "e5f5",
+        "e3f3",
+        "f5e5",
+        "f3e3",
+        "e5f5",
+        "e3f3",
+        "f5e5"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-013",
+      "sourceLine": 346,
+      "diagramHint": null,
+      "fen": "5c3/8R/4k2P1/3P5/5P3/6P2/5pN2/5A3/4CK3/6rn1 w",
+      "moves": [
+        "f5e5",
+        "f3e3",
+        "e5f5",
+        "e3f3",
+        "f5e5",
+        "f3e3"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-014",
+      "sourceLine": 349,
+      "diagramHint": null,
+      "fen": "3ak1b2/4a4/4b4/r3C2R1/p8/9/P8/4p4/4p4/5K3 w",
+      "moves": [
+        "h6g6",
+        "g9i7",
+        "g6h6",
+        "i7g9",
+        "h6g6",
+        "g9i7"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-015",
+      "sourceLine": 350,
+      "diagramHint": null,
+      "fen": "2b2k3/9/4b2P1/3N5/1R6p/6P2/5p2r/8n/4p4/5K3 w",
+      "moves": [
+        "d6c8",
+        "f9f8",
+        "c8d6",
+        "f8f9",
+        "d6c8",
+        "f9f8",
+        "c8d6"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-016",
+      "sourceLine": 351,
+      "diagramHint": null,
+      "fen": "3aka3/4n4/4b4/4C4/p3p3p/9/2c6/2C6/4K4/9 w",
+      "moves": [
+        "c2g2",
+        "c3g3",
+        "g2c2",
+        "g3c3",
+        "c2g2",
+        "c3g3"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-017",
+      "sourceLine": 352,
+      "diagramHint": null,
+      "fen": "2bNka3/1N2aPP2/n3b4/p8/5c3/2C6/9/4B4/4A4/r1BK1A1n1 w",
+      "moves": [
+        "c4h4",
+        "f5h5",
+        "h4e4",
+        "h5e5",
+        "e4h4",
+        "e5h5",
+        "h4e4",
+        "h5e5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-018",
+      "sourceLine": 353,
+      "diagramHint": null,
+      "fen": "5k3/2CPP4/9/9/9/9/9/B3p4/r8/4K4 w",
+      "moves": [
+        "e8f8",
+        "f9e9",
+        "e0f0",
+        "e2f2",
+        "f8e8",
+        "e9f9",
+        "f0e0",
+        "f2e2",
+        "e8f8",
+        "f9e9"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-019",
+      "sourceLine": 354,
+      "diagramHint": null,
+      "fen": "2bak4/4a4/4b4/8p/5R3/8P/n8/1r2C4/9/1cBAKAB2 w",
+      "moves": [
+        "f5h5",
+        "e9f9",
+        "h5f5",
+        "f9e9",
+        "f5h5",
+        "e9f9",
+        "h5f5",
+        "f9e9",
+        "f5h5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-020",
+      "sourceLine": 355,
+      "diagramHint": null,
+      "fen": "2ba1k3/4a4/b8/7R1/9/9/1r2p4/9/4A4/2B1KAB1c w",
+      "moves": [
+        "h6h9",
+        "f9f8",
+        "h9h0",
+        "i0i1",
+        "h0h8",
+        "f8f9",
+        "h8h1",
+        "i1i0",
+        "h1h9",
+        "f9f8",
+        "h9h0"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-021",
+      "sourceLine": 356,
+      "diagramHint": null,
+      "fen": "2bak3r/2R1a2C1/2Rcb4/2N2P3/5C2p/9/9/4p4/4p2p1/5K3 w",
+      "moves": [
+        "f5e5",
+        "e9f9",
+        "e5f5",
+        "f9e9",
+        "f5e5",
+        "e9f9"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-022",
+      "sourceLine": 359,
+      "diagramHint": null,
+      "fen": "4ka3/2R1a4/C8/p7p/1P5n1/9/4n4/4B4/9/4K1B2 w",
+      "moves": [
+        "c8c9",
+        "e8d9",
+        "c9c8",
+        "d9e8",
+        "c8c9",
+        "e8d9"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-023",
+      "sourceLine": 360,
+      "diagramHint": null,
+      "fen": "1R1C1abr1/4k4/4b4/p7p/2p6/9/r1P3P2/B8/9/2B1KA3 w",
+      "moves": [
+        "b9b8",
+        "e8e9",
+        "b8b9",
+        "e9e8",
+        "b9b8",
+        "e8e9"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-024",
+      "sourceLine": 361,
+      "diagramHint": null,
+      "fen": "N1ra1a3/3nk4/4b4/p1p6/6b1p/2P6/P2R4P/4B4/4A4/2B1KA3 w",
+      "moves": [
+        "d3h3",
+        "e8e9",
+        "h3d3",
+        "e9e8",
+        "d3h3",
+        "e8e9"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-025",
+      "sourceLine": 362,
+      "diagramHint": null,
+      "fen": "3k1a3/4a1P2/8r/9/2R6/9/2P6/1p7/4An2n/3CKA3 w",
+      "moves": [
+        "c5c9",
+        "d9d8",
+        "c9c5",
+        "d8d9",
+        "c5c9",
+        "d9d8"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-026",
+      "sourceLine": 365,
+      "diagramHint": null,
+      "fen": "2c1kab2/4a4/4b4/9/9/9/P1p5P/2r1N1cC1/4A4/3ACK3 w",
+      "moves": [
+        "e2d4",
+        "c2c1",
+        "h2h1",
+        "g2g1",
+        "e1d2",
+        "g1g0",
+        "d2e1",
+        "g0g1",
+        "e1d2",
+        "g1g0",
+        "d2e1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-027",
+      "sourceLine": 366,
+      "diagramHint": null,
+      "fen": "2c1kab2/4a4/4b4/9/9/9/P1p5P/2r1N1cC1/4A4/3ACK3 w",
+      "moves": [
+        "e2d4",
+        "c2c1",
+        "h2h1",
+        "g2g1",
+        "e1d2",
+        "g1g0",
+        "d2e1",
+        "g0g1",
+        "e1d2",
+        "g1g0",
+        "d2e1",
+        "g0g1"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-028",
+      "sourceLine": 369,
+      "diagramHint": null,
+      "fen": "2ba1k3/4a4/b8/7R1/9/9/1r2p4/9/4A4/2B1KAB1c w",
+      "moves": [
+        "h6i6",
+        "i0h0",
+        "i6h6",
+        "h0i0",
+        "h6i6",
+        "i0h0",
+        "i6h6",
+        "h0i0",
+        "h6i6",
+        "i0h0",
+        "i6h6",
+        "h0i0",
+        "h6i6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-029",
+      "sourceLine": 370,
+      "diagramHint": null,
+      "fen": "2ba1k3/4a4/b8/7R1/9/9/1r2p4/9/4A4/2B1KAB1c w",
+      "moves": [
+        "h6i6",
+        "i0h0",
+        "i6h6",
+        "h0i0",
+        "h6i6",
+        "i0h0",
+        "i6h6",
+        "h0i0",
+        "h6i6",
+        "i0h0"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-030",
+      "sourceLine": 371,
+      "diagramHint": null,
+      "fen": "2bakab2/3r5/2n1c2c1/p1R1p1p2/7np/2P2CP2/P2rP3P/2N1C1N2/4A4/2B1KAB1R w",
+      "moves": [
+        "f4f3",
+        "d3d7",
+        "f3f7",
+        "d7d3",
+        "f7f3",
+        "d3d7",
+        "f3f7"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-031",
+      "sourceLine": 372,
+      "diagramHint": null,
+      "fen": "2bakab2/3r5/2n1c2c1/p1R1p1p2/7np/2P2CP2/P2rP3P/2N1C1N2/4A4/2B1KAB1R w",
+      "moves": [
+        "f4f3",
+        "d3d7",
+        "f3f7",
+        "d7d3",
+        "f7f3",
+        "d3d7",
+        "f3f7",
+        "d7d3"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-032",
+      "sourceLine": 373,
+      "diagramHint": null,
+      "fen": "2bak4/4a4/4b4/2p5p/6p2/2Pp5/4P4/2N4C1/2CrA4/3AK4 w - - 0 1",
+      "moves": [
+        "h2h1",
+        "d1d3",
+        "h1h3",
+        "d3d1",
+        "h3h1",
+        "d1d3",
+        "h1h3"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-033",
+      "sourceLine": 374,
+      "diagramHint": null,
+      "fen": "2bak4/4a4/4b4/8p/2p3p2/9/N2rP4/6NC1/C3A4/4K1B2 w - - 0 1",
+      "moves": [
+        "h2h3",
+        "d3d1",
+        "h3h1",
+        "d1d3",
+        "h1h3",
+        "d3d1",
+        "h3h1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-034",
+      "sourceLine": 376,
+      "diagramHint": null,
+      "fen": "2c1kab2/4a4/4b4/9/9/9/P1p5P/2r1N1cC1/4A4/3ACK3 w - - 0 1",
+      "moves": [
+        "e2d4",
+        "g2g1",
+        "d4e2",
+        "g1g2",
+        "e2d4",
+        "g2g1",
+        "d4e2"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-035",
+      "sourceLine": 378,
+      "diagramHint": null,
+      "fen": "1r2kab2/4a4/4b4/p1p1p3p/5R3/2P2N3/PC2P3P/4Cr3/1R3c3/2B1KA3 w",
+      "moves": [
+        "b3b2",
+        "f2f3",
+        "b2b3",
+        "f3f2",
+        "b3b2",
+        "f2f3",
+        "b2b3"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-036",
+      "sourceLine": 379,
+      "diagramHint": null,
+      "fen": "4kab2/4a4/4b4/c3C1p1R/8P/2B6/9/3AB1p2/1pr1A4/4K4 w",
+      "moves": [
+        "e6c6",
+        "c1d1",
+        "c6d6",
+        "d1c1",
+        "d6c6",
+        "c1d1",
+        "c6d6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-037",
+      "sourceLine": 380,
+      "diagramHint": null,
+      "fen": "2bak3r/4a4/4b1n2/P2rp3p/2p1c1p2/4R4/N3P3R/4BC1C1/N3A4/4KAB2 w",
+      "moves": [
+        "f2f6",
+        "d6d4",
+        "f6f4",
+        "d4d6",
+        "f4f6",
+        "d6d4",
+        "f6f4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-038",
+      "sourceLine": 384,
+      "diagramHint": "24",
+      "fen": "2bak3r/4a4/4b1n2/P2rp3p/2p1c1p2/4R4/N3P3R/4BC1C1/N3A4/4KAB2 w",
+      "moves": [
+        "h2h6",
+        "d6d3",
+        "f2f3",
+        "d3d1",
+        "h6h1",
+        "d1d6",
+        "f3f6",
+        "d6d3",
+        "h1h3",
+        "d3d1",
+        "f6f1",
+        "d1d6",
+        "h3h6",
+        "d6d3",
+        "f1f3",
+        "d3d1",
+        "h6h1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-039",
+      "sourceLine": 387,
+      "diagramHint": "25",
+      "fen": "2bck3r/4a4/3ab4/P2rp3p/2p1c4/4R4/N3P3P/4BC1C1/N3A4/4KAB2 w",
+      "moves": [
+        "h2h6",
+        "d6d3",
+        "f2f3",
+        "d3d1",
+        "h6h1",
+        "d1d6",
+        "f3f6",
+        "d6d3",
+        "h1h3",
+        "d3d1",
+        "f6f1",
+        "d1d6",
+        "h3h6",
+        "d6d3",
+        "f1f3",
+        "d3d1",
+        "h6h1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-040",
+      "sourceLine": 390,
+      "diagramHint": "26",
+      "fen": "4k4/9/9/9/C8/9/pp5pp/4B4/9/r1BAKA2r w",
+      "moves": [
+        "a5i5",
+        "i0h0",
+        "i5a5",
+        "a0b0",
+        "a5h5",
+        "h0i0",
+        "h5b5",
+        "b0a0",
+        "b5i5",
+        "i0h0",
+        "i5a5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-041",
+      "sourceLine": 393,
+      "diagramHint": "27",
+      "fen": "2b1ka3/4a4/4b4/p2rp4/4n4/4R4/Pr2P2p1/4BC3/4A4/R3KAB2 w",
+      "moves": [
+        "f2f3",
+        "b3b1",
+        "f3f6",
+        "d6d3",
+        "f6f1",
+        "b1b6",
+        "f1f3",
+        "d3d1",
+        "f3f6",
+        "b6b3",
+        "f6f1",
+        "d1d6",
+        "f1f3",
+        "b3b1",
+        "f3f6"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-042",
+      "sourceLine": 396,
+      "diagramHint": "28",
+      "fen": "2bak4/4a4/4b3n/p3p4/4n3p/4R4/Pr2P4/4BC1C1/3rA4/R3KAB2 w",
+      "moves": [
+        "f2f3",
+        "b3b6",
+        "h2h1",
+        "d1d5",
+        "f3f6",
+        "b6b2",
+        "h1h5",
+        "d5d3",
+        "f6f2",
+        "b2b1",
+        "h5h3",
+        "d3d5",
+        "f2f1",
+        "b1b6",
+        "f1f6",
+        "b6b1",
+        "h3h5",
+        "d5d3",
+        "f6f1",
+        "b1b6",
+        "h5h3",
+        "d3d5",
+        "f1f6",
+        "b6b1"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-043",
+      "sourceLine": 400,
+      "diagramHint": "29",
+      "fen": "2b1ka3/4a4/4b4/9/9/9/9/4B3R/4A1rc1/4KA3 w",
+      "moves": [
+        "i2h2",
+        "h1i1",
+        "h2i2",
+        "i1h1",
+        "i2h2",
+        "h1i1"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-044",
+      "sourceLine": 403,
+      "diagramHint": "30",
+      "fen": "2bak4/4a4/4b4/9/6c2/5R3/4c4/4C4/4N4/3AKA3 w",
+      "moves": [
+        "f4g4",
+        "g5c5",
+        "g4c4",
+        "c5g5",
+        "c4g4",
+        "g5c5",
+        "g4c4"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-045",
+      "sourceLine": 406,
+      "diagramHint": "31",
+      "fen": "3k1a3/4a4/9/p1N3n2/4p1b1c/4c2R1/P8/4C4/4A4/2B1K1p2 w",
+      "moves": [
+        "h4i4",
+        "i5h5",
+        "i4h4",
+        "h5i5",
+        "h4i4",
+        "i5h5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-046",
+      "sourceLine": 409,
+      "diagramHint": "32",
+      "fen": "2bk1a3/4a4/4b4/9/c8/1R7/3r5/4B4/4A4/4KAB2 w",
+      "moves": [
+        "b4a4",
+        "a5e5",
+        "a4e4",
+        "e5a5",
+        "e4a4",
+        "a5e5",
+        "a4e4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-047",
+      "sourceLine": 410,
+      "diagramHint": "32",
+      "fen": "2bk1a3/4a4/4b4/9/c8/1R7/3r5/4B4/4A4/4KAB2 w",
+      "moves": [
+        "b4a4",
+        "a5e5",
+        "a4e4",
+        "e5a5",
+        "e4a4",
+        "a5e5",
+        "a4e4",
+        "e5a5"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-048",
+      "sourceLine": 413,
+      "diagramHint": "33",
+      "fen": "4kab2/4a4/4b4/3rC2R1/9/9/4n4/4B4/4A4/4KAB1c w",
+      "moves": [
+        "h6i6",
+        "i0h0",
+        "i6h6",
+        "h0i0",
+        "h6i6",
+        "i0h0",
+        "i6h6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-049",
+      "sourceLine": 414,
+      "diagramHint": "33",
+      "fen": "4kab2/4a4/4b4/3rC2R1/9/9/4n4/4B4/4A4/4KAB1c w",
+      "moves": [
+        "h6i6",
+        "i0h0",
+        "i6h6",
+        "h0i0",
+        "h6i6",
+        "i0h0",
+        "i6h6",
+        "h0i0"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-050",
+      "sourceLine": 417,
+      "diagramHint": "34",
+      "fen": "3aka3/7R1/7c1/9/9/9/9/9/4A4/3AK1p2 b",
+      "moves": [
+        "h7c7",
+        "h8c8",
+        "c7h7",
+        "c8h8",
+        "h7c7",
+        "h8c8"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-051",
+      "sourceLine": 420,
+      "diagramHint": "35",
+      "fen": "4k4/4a4/4b4/6c2/9/3R5/4c4/4C4/4N4/3AKA3 w",
+      "moves": [
+        "d4g4",
+        "g6c6",
+        "g4c4",
+        "c6g6",
+        "c4g4",
+        "g6c6",
+        "g4c4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-052",
+      "sourceLine": 423,
+      "diagramHint": "36",
+      "fen": "1rbakab2/9/2c5n/4p3p/p8/7R1/P1P1P1P1P/2N3N2/4A4/2BAK1B2 w",
+      "moves": [
+        "h4c4",
+        "c7g7",
+        "c4g4",
+        "g7c7",
+        "g4c4",
+        "c7g7",
+        "c4g4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-053",
+      "sourceLine": 424,
+      "diagramHint": "36",
+      "fen": "1rbakab2/9/2c5n/4p3p/p8/7R1/P1P1P1P1P/2N3N2/4A4/2BAK1B2 w",
+      "moves": [
+        "h4c4",
+        "c7g7",
+        "c4g4",
+        "g7c7",
+        "g4c4",
+        "c7g7",
+        "c4g4",
+        "g7c7"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-054",
+      "sourceLine": 427,
+      "diagramHint": "37",
+      "fen": "3ak4/4a4/4b4/p8/2p3n2/9/P1P3r2/3AB4/c3N3N/1RB1KA3 w",
+      "moves": [
+        "b0b1",
+        "a1a0",
+        "b1b0",
+        "a0a1",
+        "b0b1",
+        "a1a0",
+        "b1b0"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-055",
+      "sourceLine": 430,
+      "diagramHint": "38",
+      "fen": "2bakar2/9/2c6/8R/p3p1p2/9/P1P1P1P1P/B1N6/1r2A4/2B1KA3 w",
+      "moves": [
+        "i6c6",
+        "c7h7",
+        "c6h6",
+        "h7c7",
+        "h6c6",
+        "c7h7",
+        "c6h6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-056",
+      "sourceLine": 434,
+      "diagramHint": "39-41",
+      "fen": "2bak4/RC2arN2/4b1n2/2p5p/6p2/2P6/4p1P1c/4B4/4A4/4KAB2 b",
+      "moves": [
+        "e8f9",
+        "b8b9",
+        "f9e8",
+        "b9b8",
+        "e8f9",
+        "b8b9"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-057",
+      "sourceLine": 435,
+      "diagramHint": "39-41",
+      "fen": "2baka3/C4rN2/4b1n2/1Rp5p/6p2/2P6/4c1P1c/4B3C/4A4/4KAB2 w",
+      "moves": [
+        "b6b8",
+        "f9e8",
+        "b8b6",
+        "e8f9",
+        "b6b8",
+        "f9e8",
+        "b8b6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-058",
+      "sourceLine": 436,
+      "diagramHint": "39-41",
+      "fen": "2baka3/C4rN2/4b1n2/1Rp5p/6p2/2P6/4c1P1c/4B3C/4A4/4KAB2 w",
+      "moves": [
+        "b6b8",
+        "f9e8",
+        "b8b6",
+        "e8f9",
+        "b6b8",
+        "f9e8"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-059",
+      "sourceLine": 437,
+      "diagramHint": "39-41",
+      "fen": "3aka3/C4rN2/4b1n2/N7p/2p3p2/8P/2P3P2/9/4A4/4KA3 w",
+      "moves": [
+        "a6b8",
+        "f9e8",
+        "b8a6",
+        "e8f9",
+        "a6b8",
+        "f9e8",
+        "b8a6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-060",
+      "sourceLine": 438,
+      "diagramHint": null,
+      "fen": "3aka3/C4rN2/4b1n2/N7p/2p3p2/8P/2P3P2/9/4A4/4KA3 w",
+      "moves": [
+        "a6b8",
+        "f9e8",
+        "b8a6",
+        "e8f9",
+        "a6b8",
+        "f9e8"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-061",
+      "sourceLine": 441,
+      "diagramHint": "42",
+      "fen": "1rb1kabr1/4a1c2/1cn3n2/p1C1p1R1p/9/9/P1P1P1P1P/2N1C1N2/9/R1BAKAB2 w",
+      "moves": [
+        "g6f6",
+        "g7h5",
+        "f6g6",
+        "h5g7",
+        "g6f6",
+        "g7h5"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "red"
+    },
+    {
+      "id": "orange-062",
+      "sourceLine": 444,
+      "diagramHint": "43",
+      "fen": "1rb1kabr1/4a1c2/1cn6/pRp1pR2p/7n1/2P2p3/P3P1P1P/C1N1C1N2/4A4/3AK1B2 w",
+      "moves": [
+        "f6g6",
+        "h5g7",
+        "g6f6",
+        "g7h5",
+        "f6g6",
+        "h5g7"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "red"
+    },
+    {
+      "id": "orange-063",
+      "sourceLine": 447,
+      "diagramHint": "44",
+      "fen": "r1b1kabr1/4a1c2/1cn6/p1p1pR2p/3NP2n1/9/P1P3p1P/1C2C4/4A4/RNBAK1B2 w",
+      "moves": [
+        "f6g6",
+        "h5g7",
+        "g6f6",
+        "g7h5",
+        "f6g6",
+        "h5g7"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "red"
+    },
+    {
+      "id": "orange-064",
+      "sourceLine": 451,
+      "diagramHint": "45",
+      "fen": "4ka3/1CP1a4/4b4/2p6/1cb1r4/4CN3/4Pp2P/4B4/4A4/2BAK4 w",
+      "moves": [
+        "f4g6",
+        "e5e6",
+        "g6f4",
+        "e6e5",
+        "f4g6",
+        "e5e6",
+        "g6f4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-065",
+      "sourceLine": 452,
+      "diagramHint": "45",
+      "fen": "4ka3/1CP1a4/4b4/2p6/1cb1r4/4CN3/4Pp2P/4B4/4A4/2BAK4 w",
+      "moves": [
+        "f4g6",
+        "e5e6",
+        "g6f4",
+        "e6e5",
+        "f4g6",
+        "e5e6"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-066",
+      "sourceLine": 456,
+      "diagramHint": "46",
+      "fen": "3ak1br1/4a4/4b4/p8/6p2/9/P7P/n7B/4A4/2R1KA3 w",
+      "moves": [
+        "c0c2",
+        "a2b0",
+        "c2c1",
+        "b0a2",
+        "c1c2",
+        "a2b0",
+        "c2c1",
+        "b0a2"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "red"
+    },
+    {
+      "id": "orange-067",
+      "sourceLine": 457,
+      "diagramHint": "46",
+      "fen": "3ak1br1/4a4/4b4/p8/6p2/9/P7P/n7B/4A4/2R1KA3 w",
+      "moves": [
+        "c0c2",
+        "a2b0",
+        "c2c1",
+        "b0a2",
+        "c1c2",
+        "a2b0",
+        "c2c1"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "red"
+    },
+    {
+      "id": "orange-068",
+      "sourceLine": 461,
+      "diagramHint": "47",
+      "fen": "4kab2/4a4/8b/p1p5p/4c1n2/6R2/P1P1P1P1P/4BC3/8N/2B1KA1r1 w",
+      "moves": [
+        "i1g2",
+        "h0g0",
+        "g2i1",
+        "g0h0",
+        "i1g2",
+        "h0g0",
+        "g2i1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-069",
+      "sourceLine": 465,
+      "diagramHint": "48",
+      "fen": "3akc3/4a4/9/9/3n5/1R7/9/9/4A4/4KAB2 w",
+      "moves": [
+        "b4b5",
+        "d5c3",
+        "b5c5",
+        "c3e4",
+        "c5c4",
+        "e4d6",
+        "c4d4",
+        "d6f5",
+        "d4d5",
+        "f5e3",
+        "d5e5",
+        "e3c4",
+        "e5e4",
+        "c4d6",
+        "e4d4",
+        "d6f5",
+        "d4d5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-070",
+      "sourceLine": 469,
+      "diagramHint": "49",
+      "fen": "4ka3/4a4/3Pb4/2p1r3p/2b6/2R6/1n7/4B4/4A4/4KAB2 w",
+      "moves": [
+        "c4c3",
+        "b3a1",
+        "c3c1",
+        "a1b3",
+        "c1c3",
+        "b3a1",
+        "c3c1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-071",
+      "sourceLine": 470,
+      "diagramHint": "49",
+      "fen": "4ka3/4a4/3Pb4/2p1r3p/2b6/2R6/1n7/4B4/4A4/4KAB2 w",
+      "moves": [
+        "c4c3",
+        "b3a1",
+        "c3c1",
+        "a1b3",
+        "c1c3",
+        "b3a1",
+        "c3c1",
+        "a1b3"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-072",
+      "sourceLine": 474,
+      "diagramHint": "50",
+      "fen": "3akr3/n3a4/4b4/9/P1b6/9/1n7/4B4/3RA4/2BAK4 w",
+      "moves": [
+        "d1d3",
+        "b3c1",
+        "d3d1",
+        "c1b3",
+        "d1d3",
+        "b3c1",
+        "d3d1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-073",
+      "sourceLine": 475,
+      "diagramHint": "50",
+      "fen": "3akr3/n3a4/4b4/9/P1b6/9/1n7/4B4/3RA4/2BAK4 w",
+      "moves": [
+        "d1d3",
+        "b3c1",
+        "d3d1",
+        "c1b3",
+        "d1d3",
+        "b3c1"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-074",
+      "sourceLine": 479,
+      "diagramHint": null,
+      "fen": "2bak3r/4a4/4b4/p3C1R2/9/P8/5R3/9/4r4/5K3 w",
+      "moves": [
+        "g6i6",
+        "i9g9",
+        "i6g6",
+        "g9i9",
+        "g6i6",
+        "i9g9"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-075",
+      "sourceLine": 482,
+      "diagramHint": null,
+      "fen": "2b1ka3/4a4/4b4/p3r3p/9/1R7/P7P/2p1CpC2/4A1n2/2BK1AB1c w",
+      "moves": [
+        "b4b6",
+        "e6e3",
+        "b6b3",
+        "e3e6",
+        "b3b6",
+        "e6e3",
+        "b6b3"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-076",
+      "sourceLine": 483,
+      "diagramHint": null,
+      "fen": "2b1ka3/4a4/4b4/p3r3p/9/1R7/P7P/2p1CpC2/4A1n2/2BK1AB1c w",
+      "moves": [
+        "b4b6",
+        "e6e3",
+        "b6b3",
+        "e3e6",
+        "b3b6",
+        "e6e3",
+        "b6b3",
+        "e3e6"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-077",
+      "sourceLine": 486,
+      "diagramHint": null,
+      "fen": "Cc1ak4/4a1P2/9/2p6/1P7/6C2/9/B2p5/2p2p3/4K4 w",
+      "moves": [
+        "g4b4",
+        "b9c9",
+        "b4c4",
+        "c9b9",
+        "c4b4",
+        "b9c9",
+        "b4c4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-078",
+      "sourceLine": 490,
+      "diagramHint": null,
+      "fen": "3k1a1cC/4a4/4b4/9/6PP1/2C6/2p1p4/4B4/4A4/4KAB2 w",
+      "moves": [
+        "c4h4",
+        "h9g9",
+        "h4g4",
+        "g9h9",
+        "g4h4",
+        "h9g9",
+        "h4g4"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-079",
+      "sourceLine": 493,
+      "diagramHint": null,
+      "fen": "5ab2/4k2P1/5an1b/p1p3p2/8p/2P4N1/6P1P/B8/5p2c/3KC4 w",
+      "moves": [
+        "h4f5",
+        "g7i6",
+        "f5h4",
+        "i6g7",
+        "h4f5",
+        "g7i6",
+        "f5h4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-080",
+      "sourceLine": 496,
+      "diagramHint": null,
+      "fen": "4ka1nC/3Pa4/9/8p/8P/4c4/9/7C1/3p1p3/4K4 w",
+      "moves": [
+        "i5h5",
+        "e4h4",
+        "h5g5",
+        "h4g4",
+        "g5h5",
+        "g4h4",
+        "h5g5",
+        "h4g4",
+        "g5h5"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-081",
+      "sourceLine": 497,
+      "diagramHint": null,
+      "fen": "4ka1nC/3Pa4/9/8p/8P/4c4/9/7C1/3p1p3/4K4 w",
+      "moves": [
+        "i5h5",
+        "e4h4",
+        "h5g5",
+        "h4g4",
+        "g5h5",
+        "g4h4",
+        "h5g5",
+        "h4g4"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-082",
+      "sourceLine": 500,
+      "diagramHint": null,
+      "fen": "4k1b2/4n4/3aba3/4p4/9/8P/P2nP4/2N1BA3/8c/2BK2C2 w",
+      "moves": [
+        "g0f0",
+        "i1f1",
+        "f2e1",
+        "f1h1",
+        "e1f2",
+        "h1f1",
+        "f2e1",
+        "f1h1",
+        "e1f2"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-083",
+      "sourceLine": 501,
+      "diagramHint": null,
+      "fen": "4k1b2/4n4/3aba3/4p4/9/8P/P2nP4/2N1BA3/8c/2BK2C2 w",
+      "moves": [
+        "g0f0",
+        "i1f1",
+        "f2e1",
+        "f1h1",
+        "e1f2",
+        "h1f1",
+        "f2e1",
+        "f1h1"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-084",
+      "sourceLine": 504,
+      "diagramHint": null,
+      "fen": "2bakab2/9/4c3n/p1prp3R/9/2P6/P3P1c1P/2N1BC2B/4A4/3AK4 w",
+      "moves": [
+        "f2g2",
+        "g3f3",
+        "i2g4",
+        "f3g3",
+        "g4i2",
+        "g3f3",
+        "i2g4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-085",
+      "sourceLine": 507,
+      "diagramHint": null,
+      "fen": "3akabC1/9/4b4/7P1/2n6/8p/3p5/9/4A1c2/2BAK1B1C w",
+      "moves": [
+        "g0i2",
+        "g1i1",
+        "i2g0",
+        "i1g1",
+        "g0i2",
+        "g1i1",
+        "i2g0"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-086",
+      "sourceLine": 510,
+      "diagramHint": null,
+      "fen": "3akabC1/9/4b4/7P1/2n5p/9/3p5/9/4A1c2/2BAK1B1C w",
+      "moves": [
+        "g0i2",
+        "g1i1",
+        "i2g0",
+        "i1g1",
+        "g0i2",
+        "g1i1",
+        "i2g0"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-087",
+      "sourceLine": 513,
+      "diagramHint": null,
+      "fen": "3akabC1/9/4b4/r3p4/p1p6/4P4/P1P5n/NCr1B4/4A4/R2AK1B2 w",
+      "moves": [
+        "h9h2",
+        "i3g2",
+        "e2g4",
+        "g2h4",
+        "g4e2",
+        "h4g2",
+        "e2g4",
+        "g2h4",
+        "g4e2"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-088",
+      "sourceLine": 514,
+      "diagramHint": null,
+      "fen": "3akabC1/9/4b4/r3p4/p1p6/4P4/P1P5n/NCr1B4/4A4/R2AK1B2 w",
+      "moves": [
+        "h9h2",
+        "i3g2",
+        "e2g4",
+        "g2h4",
+        "g4e2",
+        "h4g2",
+        "e2g4",
+        "g2h4"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-089",
+      "sourceLine": 517,
+      "diagramHint": null,
+      "fen": "4kab2/4a4/4b3n/2r3p1p/2p2N3/9/1RP3P1P/4B3C/2r1A4/2N1KABc1 w",
+      "moves": [
+        "i2i1",
+        "c1c2",
+        "i1i2",
+        "c2c1",
+        "i2i1",
+        "c1c2",
+        "i1i2"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-090",
+      "sourceLine": 518,
+      "diagramHint": null,
+      "fen": "4kab2/4a4/4b3n/2r3p1p/2p2N3/9/1RP3P1P/4B3C/2r1A4/2N1KABc1 w",
+      "moves": [
+        "i2i1",
+        "c1c2",
+        "i1i2",
+        "c2c1",
+        "i2i1",
+        "c1c2"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-091",
+      "sourceLine": 519,
+      "diagramHint": null,
+      "fen": "4kab2/4a4/4b3n/2r3p1p/2p2N3/9/1RP3P1P/4B3C/2r1A4/2N1KABc1 w",
+      "moves": [
+        "i2i1",
+        "h0h1",
+        "e1d0",
+        "h1h0",
+        "d0e1",
+        "h0h1",
+        "e1d0"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-092",
+      "sourceLine": 520,
+      "diagramHint": null,
+      "fen": "4kab2/4a4/4b3n/2r3p1p/2p2N3/9/1RP3P1P/4B3C/2r1A4/2N1KABc1 w",
+      "moves": [
+        "i2i1",
+        "h0h1",
+        "e1d0",
+        "h1h0",
+        "d0e1",
+        "h0h1",
+        "e1d0",
+        "h1h0"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-093",
+      "sourceLine": 523,
+      "diagramHint": null,
+      "fen": "4ka3/4a4/9/4r4/9/9/9/1C2C4/p3A4/3K1AB1n w",
+      "moves": [
+        "b2b6",
+        "e6e5",
+        "b6b5",
+        "e5e6",
+        "b5b6",
+        "e6e5",
+        "b6b5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-094",
+      "sourceLine": 526,
+      "diagramHint": null,
+      "fen": "3aka3/4c4/4r4/9/9/9/PR7/2p1CA3/7p1/2B2K3 w",
+      "moves": [
+        "b3b7",
+        "e7e3",
+        "b7b3",
+        "e3e4",
+        "b3b4",
+        "e4e3",
+        "b4b3",
+        "e3e4",
+        "b3b4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-095",
+      "sourceLine": 527,
+      "diagramHint": null,
+      "fen": "3aka3/4c4/4r4/9/9/9/PR7/2p1CA3/7p1/2B2K3 w",
+      "moves": [
+        "b3b7",
+        "e7e3",
+        "b7b3",
+        "e3e4",
+        "b3b4",
+        "e4e3",
+        "b4b3",
+        "e3e4",
+        "b3b4",
+        "e4e3"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-096",
+      "sourceLine": 530,
+      "diagramHint": null,
+      "fen": "5kb2/4a4/4ba3/5r3/9/P6R1/3cpCpc1/4BA3/4A4/2BK5 w",
+      "moves": [
+        "h4h6",
+        "f6f5",
+        "h6h5",
+        "f5f6",
+        "h5h6",
+        "f6f5",
+        "h6h5"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-097",
+      "sourceLine": 531,
+      "diagramHint": null,
+      "fen": "5kb2/4a4/4ba3/5r3/9/P6R1/3cpCpc1/4BA3/4A4/2BK5 w",
+      "moves": [
+        "h4h6",
+        "f6f5",
+        "h6h5",
+        "f5f6",
+        "h5h6",
+        "f6f5",
+        "h6h5",
+        "f5f6"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-098",
+      "sourceLine": 534,
+      "diagramHint": null,
+      "fen": "2bk1a1rC/4a1R2/4b4/9/9/4cp3/9/4B4/N3Ap3/2BAK4 w",
+      "moves": [
+        "g8h8",
+        "h9g9",
+        "h8g8",
+        "g9h9",
+        "g8h8",
+        "h9g9",
+        "h8g8",
+        "g9h9",
+        "g8h8"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-099",
+      "sourceLine": 538,
+      "diagramHint": "67-70",
+      "fen": "4ka3/4a4/4b4/p7p/9/4C4/4P4/4B4/3K5/3Ac1B2 w",
+      "moves": [
+        "d1e1",
+        "e0f0",
+        "e1f1",
+        "f0e0",
+        "f1e1",
+        "e0f0",
+        "e1f1"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-100",
+      "sourceLine": 539,
+      "diagramHint": "67-70",
+      "fen": "3k2b1r/4a4/5a2b/3PP4/7P1/9/9/B4N2B/5K3/4p4 w",
+      "moves": [
+        "f1e1",
+        "e0d0",
+        "e1d1",
+        "d0e0",
+        "d1e1",
+        "e0d0",
+        "e1d1"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-101",
+      "sourceLine": 540,
+      "diagramHint": "67-70",
+      "fen": "4k1b1c/7P1/3a5/9/9/9/9/9/3K5/9 w",
+      "moves": [
+        "h8i8",
+        "i9h9",
+        "i8h8",
+        "h9i9",
+        "h8i8",
+        "i9h9",
+        "i8h8"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-102",
+      "sourceLine": 541,
+      "diagramHint": "67-70",
+      "fen": "4kab2/4a4/4b1n2/4p2P1/2p5P/9/9/7C1/4A4/4K4 w",
+      "moves": [
+        "h6g6",
+        "g7h9",
+        "g6h6",
+        "h9g7",
+        "h6g6",
+        "g7h9"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-103",
+      "sourceLine": 545,
+      "diagramHint": "71-75",
+      "fen": "3a2b1r/4ak3/8p/7P1/9/9/9/B2NN3B/3K5/4p4 w",
+      "moves": [
+        "d1e1",
+        "e0d0",
+        "e1d1",
+        "d0e0",
+        "d1e1",
+        "e0d0",
+        "e1d1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-104",
+      "sourceLine": 546,
+      "diagramHint": "71-75",
+      "fen": "1c1ak4/N1PNa4/9/9/5P3/9/9/4Bp3/9/3p1K1p1 w",
+      "moves": [
+        "c8b8",
+        "b9c9",
+        "b8c8",
+        "c9b9",
+        "c8b8",
+        "b9c9",
+        "b8c8"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-105",
+      "sourceLine": 547,
+      "diagramHint": "71-75",
+      "fen": "1Pbak2r1/4a4/4b4/2p6/9/3R5/2P6/4p2p1/3CC2N1/5K3 w",
+      "moves": [
+        "d4e4",
+        "e2d2",
+        "e4d4",
+        "d2e2",
+        "d4e4",
+        "e2d2",
+        "e4d4",
+        "d2e2",
+        "d4e4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-106",
+      "sourceLine": 548,
+      "diagramHint": "71-75",
+      "fen": "1Pbak2r1/4a4/4b4/2p6/9/3R5/2P6/4p2p1/3CC2N1/5K3 w",
+      "moves": [
+        "d4e4",
+        "e2d2",
+        "e4d4",
+        "d2e2",
+        "d4e4",
+        "e2d2",
+        "e4d4",
+        "d2e2"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-107",
+      "sourceLine": 550,
+      "diagramHint": null,
+      "fen": "3akab2/c2R1R2c/4b4/9/9/9/9/4B4/4K4/2B6 w",
+      "moves": [
+        "d8d6",
+        "d9e8",
+        "d6d8",
+        "e8d9",
+        "f8f6",
+        "f9e8",
+        "f6f8",
+        "e8f9",
+        "d8d6",
+        "d9e8"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-108",
+      "sourceLine": 551,
+      "diagramHint": null,
+      "fen": "2bak4/4a4/4b4/1rp6/P2R5/4pp3/9/CC7/4p4/5K3 w",
+      "moves": [
+        "a5b5",
+        "b6a6",
+        "b5a5",
+        "a6b6",
+        "a5b5",
+        "b6a6",
+        "b5a5"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-109",
+      "sourceLine": 552,
+      "diagramHint": null,
+      "fen": "2bak4/4a4/4b4/1rp6/P2R5/4pp3/9/CC7/4p4/5K3 w",
+      "moves": [
+        "a5b5",
+        "b6a6",
+        "b5a5",
+        "a6b6",
+        "a5b5",
+        "b6a6",
+        "b5a5",
+        "a6b6"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-110",
+      "sourceLine": 553,
+      "diagramHint": null,
+      "fen": "3rk1b2/4a4/3ab2r1/5R1N1/9/4p4/9/4B4/4A4/3AK1B2 w",
+      "moves": [
+        "f6e6",
+        "e4f4",
+        "e6f6",
+        "f4e4",
+        "f6e6",
+        "e4f4",
+        "e6f6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-111",
+      "sourceLine": 554,
+      "diagramHint": null,
+      "fen": "3rk1b2/4a4/3ab2r1/5R1N1/9/4p4/9/4B4/4A4/3AK1B2 w",
+      "moves": [
+        "f6e6",
+        "e4f4",
+        "e6f6",
+        "f4e4",
+        "f6e6",
+        "e4f4"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-112",
+      "sourceLine": 556,
+      "diagramHint": null,
+      "fen": "1Pbak2r1/4a4/4b4/2p6/9/3R5/2P6/4p2p1/3CC2N1/5K3 w",
+      "moves": [
+        "d4e4",
+        "e2d2",
+        "e4d4",
+        "d2e2",
+        "d4e4",
+        "e2d2",
+        "e4d4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-113",
+      "sourceLine": 557,
+      "diagramHint": null,
+      "fen": "1Pbak2r1/4a4/4b4/2p6/9/3R5/2P6/4p2p1/3CC2N1/5K3 w",
+      "moves": [
+        "d4e4",
+        "e2d2",
+        "e4d4",
+        "d2e2",
+        "d4e4",
+        "e2d2"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-114",
+      "sourceLine": 560,
+      "diagramHint": "77",
+      "fen": "4kab2/4a4/3rb4/9/9/9/8R/1p5p1/4A4/3AK1B2 w",
+      "moves": [
+        "i3h3",
+        "h2g2",
+        "h3g3",
+        "g2h2",
+        "g3h3",
+        "h2g2",
+        "h3g3"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-115",
+      "sourceLine": 563,
+      "diagramHint": "78",
+      "fen": "2rakab2/9/8b/2NPP1p2/9/2P1c1P2/7R1/2n1B1p2/4A4/3AK1B2 w",
+      "moves": [
+        "h3c3",
+        "c2a1",
+        "c3e3",
+        "e4f4",
+        "e3f3",
+        "f4e4",
+        "f3g3",
+        "g2h2",
+        "g3a3",
+        "a1c0",
+        "a3c3",
+        "c0a1",
+        "c3e3",
+        "e4f4",
+        "e3f3",
+        "f4e4",
+        "f3h3",
+        "h2g2",
+        "h3a3",
+        "a1c0",
+        "a3c3",
+        "c0a1",
+        "c3e3",
+        "e4f4"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-116",
+      "sourceLine": 564,
+      "diagramHint": "78",
+      "fen": "2rakab2/9/8b/2NPP1p2/9/2P1c1P2/7R1/2n1B1p2/4A4/3AK1B2 w",
+      "moves": [
+        "h3c3",
+        "c2a1",
+        "c3a3",
+        "a1c2",
+        "a3c3",
+        "c2a1",
+        "c3a3"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-117",
+      "sourceLine": 567,
+      "diagramHint": "79",
+      "fen": "3aka3/9/4b4/p8/2b6/2N3B2/4P3p/2C1B4/3rA1p2/3AK4 w",
+      "moves": [
+        "c2c3",
+        "d1d3",
+        "c3c1",
+        "d3d1",
+        "c1c3",
+        "d1d3",
+        "c3c1",
+        "d3d1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "red"
+    },
+    {
+      "id": "orange-118",
+      "sourceLine": 570,
+      "diagramHint": "80",
+      "fen": "3rkabc1/4a3R/4b4/9/9/9/9/B8/1R2A4/c1BAK4 w",
+      "moves": [
+        "i8h8",
+        "h9i9",
+        "b1a1",
+        "a0b0",
+        "h8i8",
+        "i9h9",
+        "i8h8",
+        "h9i9",
+        "a1b1",
+        "b0a0",
+        "b1a1",
+        "a0b0"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-119",
+      "sourceLine": 571,
+      "diagramHint": "80",
+      "fen": "3rkabc1/4a3R/4b4/9/9/9/9/B8/1R2A4/c1BAK4 w",
+      "moves": [
+        "b1a1",
+        "a0b0",
+        "a1b1",
+        "b0a0",
+        "b1a1",
+        "a0b0",
+        "a1b1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-120",
+      "sourceLine": 574,
+      "diagramHint": "81",
+      "fen": "2b1ka1P1/4a4/b8/p5R2/8c/7R1/P1p3p2/3rBn3/N2C2n1C/3K1NB2 w",
+      "moves": [
+        "h4h5",
+        "i5i7",
+        "g6g7",
+        "i7i6",
+        "h5h6",
+        "i6i5",
+        "g7g5",
+        "i5i7",
+        "h6h7",
+        "i7i6",
+        "g5g6",
+        "i6i5",
+        "h7h5",
+        "i5i7",
+        "h5h7"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-121",
+      "sourceLine": 577,
+      "diagramHint": "82",
+      "fen": "4k4/9/9/9/3P5/4C4/2N6/6ppc/4p4/5K3 w",
+      "moves": [
+        "c3e2",
+        "e1d1",
+        "e2c3",
+        "d1e1",
+        "c3e2",
+        "e1d1",
+        "e2c3"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-122",
+      "sourceLine": 578,
+      "diagramHint": "82",
+      "fen": "4k4/9/9/9/3P5/4C4/2N6/6ppc/4p4/5K3 w",
+      "moves": [
+        "c3e2",
+        "e1d1",
+        "e2c3",
+        "d1e1",
+        "c3e2",
+        "e1d1"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-123",
+      "sourceLine": 582,
+      "diagramHint": "83",
+      "fen": "2baka3/9/4b4/9/6c2/3R5/4c4/4C4/4N4/3AKA3 w",
+      "moves": [
+        "d4g4",
+        "g5d5",
+        "g4d4",
+        "d5g5",
+        "d4g4",
+        "g5d5",
+        "g4d4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-124",
+      "sourceLine": 583,
+      "diagramHint": "83",
+      "fen": "2baka3/9/4b4/9/6c2/3R5/4c4/4C4/4N4/3AKA3 w",
+      "moves": [
+        "d4g4",
+        "g5d5",
+        "g4d4",
+        "d5g5",
+        "d4g4",
+        "g5d5",
+        "g4d4",
+        "d5g5"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-125",
+      "sourceLine": 586,
+      "diagramHint": "84",
+      "fen": "1r2knb1C/4a4/5ac1b/7R1/p8/9/9/9/4A4/3AK4 w",
+      "moves": [
+        "h6g6",
+        "g7h7",
+        "g6h6",
+        "h7g7",
+        "h6g6",
+        "g7h7",
+        "g6h6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-126",
+      "sourceLine": 587,
+      "diagramHint": "84",
+      "fen": "1r2knb1C/4a4/5ac1b/7R1/p8/9/9/9/4A4/3AK4 w",
+      "moves": [
+        "h6g6",
+        "g7h7",
+        "g6h6",
+        "h7g7",
+        "h6g6",
+        "g7h7"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-127",
+      "sourceLine": 590,
+      "diagramHint": "85",
+      "fen": "2bakab2/r4rN2/6P2/p3P3p/9/P5R2/5c2P/4B4/4A4/3AK1B2 w",
+      "moves": [
+        "g4g3",
+        "f3f6",
+        "g3g6",
+        "f6f3",
+        "g6g3",
+        "f3f6",
+        "g3g6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-128",
+      "sourceLine": 594,
+      "diagramHint": "86",
+      "fen": "3akab2/9/4b3r/8c/p8/7R1/P8/9/4A4/r1BAK3R w",
+      "moves": [
+        "h4h6",
+        "i6i3",
+        "h6h3",
+        "i3i6",
+        "h3h6",
+        "i6i3",
+        "h6h3"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-129",
+      "sourceLine": 597,
+      "diagramHint": "87",
+      "fen": "1r2kab2/4a4/4b4/4R3p/5P3/2R6/4c4/4r4/4A4/2B1KA3 w",
+      "moves": [
+        "c4c3",
+        "e3e4",
+        "c3c4",
+        "e4e3",
+        "c4c3",
+        "e3e4"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-130",
+      "sourceLine": 600,
+      "diagramHint": "88",
+      "fen": "2b1ka2c/4a4/4b3r/8c/p8/9/P4R3/8R/4A4/r1BAK3C w",
+      "moves": [
+        "f3f6",
+        "i6i5",
+        "f6f5",
+        "i5i4",
+        "f5f4",
+        "i4i6",
+        "f4f6",
+        "i6i5",
+        "f6f5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-131",
+      "sourceLine": 603,
+      "diagramHint": "89",
+      "fen": "4kab2/4a3c/2n1bc3/2R6/8p/C8/8P/3CB4/4A4/4KAB2 w",
+      "moves": [
+        "d2c2",
+        "c7a8",
+        "c6a6",
+        "a8c7",
+        "a6c6",
+        "c7a8",
+        "c6a6"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-132",
+      "sourceLine": 606,
+      "diagramHint": "90&91",
+      "fen": "2bak1r2/4a4/1C2b4/9/6p2/9/9/9/7R1/c1BAK4 w",
+      "moves": [
+        "h1a1",
+        "a0b0",
+        "a1b1",
+        "b0a0",
+        "b1a1",
+        "a0b0",
+        "a1b1"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-133",
+      "sourceLine": 607,
+      "diagramHint": "90&91",
+      "fen": "2bak1r2/4a4/1C2b4/9/6p2/9/9/9/7R1/c1BAK4 w",
+      "moves": [
+        "h1a1",
+        "a0b0",
+        "a1b1",
+        "b0a0",
+        "b1a1",
+        "a0b0",
+        "a1b1",
+        "b0a0"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-134",
+      "sourceLine": 608,
+      "diagramHint": "90&91",
+      "fen": "2bak4/4a4/4b4/CC7/3r5/1R7/5r3/4B4/4A4/c3KAB2 w",
+      "moves": [
+        "b4a4",
+        "a0b0",
+        "a4b4",
+        "b0a0",
+        "b4a4",
+        "a0b0",
+        "a4b4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-135",
+      "sourceLine": 609,
+      "diagramHint": "90&91",
+      "fen": "2bak4/4a4/4b4/CC7/3r5/1R7/5r3/4B4/4A4/c3KAB2 w",
+      "moves": [
+        "b4a4",
+        "a0b0",
+        "a4b4",
+        "b0a0",
+        "b4a4",
+        "a0b0"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-136",
+      "sourceLine": 612,
+      "diagramHint": "92",
+      "fen": "2bak4/4a4/4b1n2/4p3p/9/1p1r5/c3RR3/B2CC3B/4p4/2p2K3 w",
+      "moves": [
+        "e3d3",
+        "d4e4",
+        "d3e3",
+        "e4d4",
+        "e3d3",
+        "d4e4",
+        "d3e3"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-137",
+      "sourceLine": 613,
+      "diagramHint": "92",
+      "fen": "2bak4/4a4/4b1n2/4p3p/9/1p1r5/c3RR3/B2CC3B/4p4/2p2K3 w",
+      "moves": [
+        "e3d3",
+        "d4e4",
+        "d3e3",
+        "e4d4",
+        "e3d3",
+        "d4e4",
+        "d3e3",
+        "e4d4"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-138",
+      "sourceLine": 616,
+      "diagramHint": "93-95",
+      "fen": "1r1ak1b2/N1RNC4/4b4/9/9/9/4P4/9/4p4/5K3 w",
+      "moves": [
+        "c8b8",
+        "b9c9",
+        "b8c8",
+        "c9b9",
+        "c8b8",
+        "b9c9",
+        "b8c8"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-139",
+      "sourceLine": 617,
+      "diagramHint": "93-95",
+      "fen": "5k3/4P4/9/9/9/9/9/5N3/9/3KRr1c1 w",
+      "moves": [
+        "f2h1",
+        "f0g0",
+        "h1f2",
+        "g0f0",
+        "f2h1",
+        "f0g0",
+        "h1f2"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-140",
+      "sourceLine": 618,
+      "diagramHint": "93-95",
+      "fen": "4k4/9/4c4/6PC1/9/9/9/4BN3/4A4/3AKR1rc w",
+      "moves": [
+        "f2h1",
+        "h0g0",
+        "h1f2",
+        "g0h0",
+        "f2h1",
+        "h0g0",
+        "h1f2"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-141",
+      "sourceLine": 621,
+      "diagramHint": "96",
+      "fen": "C4k3/3P5/9/5c3/1P7/2B6/2P2r3/3p1R3/5K3/9 w",
+      "moves": [
+        "a9a3",
+        "f3f5",
+        "a3a5",
+        "f5f3",
+        "a5a3",
+        "f3f5",
+        "a3a5"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-142",
+      "sourceLine": 624,
+      "diagramHint": "97&98",
+      "fen": "C1Na5/3Rak3/4bc3/2p6/n5b2/9/1p6r/4B4/4A4/2B1KA3 w",
+      "moves": [
+        "a9a8",
+        "f8f9",
+        "a8a9",
+        "f9f8",
+        "a9a8",
+        "f8f9"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-143",
+      "sourceLine": 625,
+      "diagramHint": "97&98",
+      "fen": "5k3/1n7/9/3P5/P1r5c/2B5R/6P2/4B4/4A4/3AK4 w",
+      "moves": [
+        "i4h4",
+        "i5h5",
+        "h4g4",
+        "h5g5",
+        "g4i4",
+        "g5i5",
+        "i4h4",
+        "i5h5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-144",
+      "sourceLine": 628,
+      "diagramHint": "99",
+      "fen": "4k4/3P2P1P/9/9/6b1c/5p1C1/9/9/4A4/3AK1p2 w",
+      "moves": [
+        "h4i4",
+        "i5h5",
+        "i4h4",
+        "h5i5",
+        "h4i4",
+        "i5h5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-145",
+      "sourceLine": 629,
+      "diagramHint": "99",
+      "fen": "4k1b2/3P5/c3b2c1/7R1/9/9/9/9/4K4/9 w",
+      "moves": [
+        "h6f6",
+        "h7f7",
+        "f6i6",
+        "f7i7",
+        "i6b6",
+        "a7b7",
+        "b6g6",
+        "i7g7",
+        "g6f6",
+        "g7f7",
+        "f6h6",
+        "f7h7",
+        "h6b6",
+        "b7a7",
+        "b6h6",
+        "h7f7",
+        "h6f6",
+        "f7h7",
+        "f6h6",
+        "h7f7",
+        "h6f6"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-146",
+      "sourceLine": 632,
+      "diagramHint": "100-103",
+      "fen": "4k4/3P2P1P/9/9/6b1c/5p1C1/9/9/4A4/3AK1p2 w",
+      "moves": [
+        "h4i4",
+        "i5h5",
+        "i4h4",
+        "h5i5",
+        "h4i4",
+        "i5h5",
+        "i4h4"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-147",
+      "sourceLine": 633,
+      "diagramHint": "100-103",
+      "fen": "4k4/3P2P1P/9/9/6b1c/5p1C1/9/9/4A4/3AK1p2 w",
+      "moves": [
+        "h4i4",
+        "i5h5",
+        "i4h4",
+        "h5i5",
+        "h4i4",
+        "i5h5"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-148",
+      "sourceLine": 634,
+      "diagramHint": "100-103",
+      "fen": "2bak4/4a4/4b4/9/2p2r3/r8/1R7/4B4/9/1R2K1B2 w",
+      "moves": [
+        "b3b4",
+        "a4a1",
+        "b4b1",
+        "a1a3",
+        "b1b3",
+        "a3a6",
+        "b3b6",
+        "a6a8",
+        "b6b8",
+        "a8a1",
+        "b8b1",
+        "a1a3",
+        "b1b3"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-149",
+      "sourceLine": 635,
+      "diagramHint": "100-103",
+      "fen": "3r1k3/4P4/9/c1p2r3/9/2R6/9/4B4/4A4/4K1B2 w",
+      "moves": [
+        "c4g4",
+        "f6g6",
+        "g4h4",
+        "g6h6",
+        "h4f4",
+        "h6f6",
+        "f4i4",
+        "f6i6",
+        "i4h4",
+        "i6h6",
+        "h4g4",
+        "h6g6",
+        "g4h4",
+        "g6h6"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-150",
+      "sourceLine": 636,
+      "diagramHint": "100-103",
+      "fen": "2bk5/3c5/4bN3/1R2p4/9/9/3r5/3R1p3/3K5/9 w",
+      "moves": [
+        "b6b3",
+        "d3d4",
+        "b3b4",
+        "d4d6",
+        "b4b6",
+        "d6d3",
+        "b6b3",
+        "d3d4"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-151",
+      "sourceLine": 637,
+      "diagramHint": null,
+      "fen": "2bk5/3c5/4bN3/1R2p4/9/9/3r5/3R1p3/3K5/9 w",
+      "moves": [
+        "b6b3",
+        "d3d4",
+        "b3b4",
+        "d4d3",
+        "b4b3",
+        "d3d4",
+        "b3b4"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-152",
+      "sourceLine": 638,
+      "diagramHint": null,
+      "fen": "1r1ak4/4aP3/b1P1b4/4C4/9/3R5/9/9/4p4/3K5 w",
+      "moves": [
+        "c7b7",
+        "b9c9",
+        "b7c7",
+        "c9b9",
+        "c7b7",
+        "b9c9"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-153",
+      "sourceLine": 643,
+      "diagramHint": null,
+      "fen": "2ca1k3/4a4/b3b4/2P5P/6p2/1c7/9/B7N/2nR5/2BAK4 w",
+      "moves": [
+        "c6b6",
+        "e7c5",
+        "b6c6",
+        "c5e7",
+        "c6b6",
+        "e7c5",
+        "b6c6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-154",
+      "sourceLine": 646,
+      "diagramHint": null,
+      "fen": "3k2b2/4P4/4b4/9/8p/6Bc1/6P1P/3AB4/4pp3/1p1K3R1 w",
+      "moves": [
+        "h0h1",
+        "h4h3",
+        "h1h0",
+        "h3h4",
+        "h0h1",
+        "h4h3"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-155",
+      "sourceLine": 647,
+      "diagramHint": null,
+      "fen": "3k2b2/4P4/4b4/9/8p/6Bc1/6P1P/3AB4/4pp3/1p1K3R1 w",
+      "moves": [
+        "h0h1",
+        "h4h3",
+        "h1h0",
+        "h3h4",
+        "h0h1",
+        "h4h3",
+        "h1h0"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-156",
+      "sourceLine": 650,
+      "diagramHint": null,
+      "fen": "3akab2/c2R1R2c/4b4/9/9/9/9/4B4/4K4/2B6 w",
+      "moves": [
+        "d8d6",
+        "d9e8",
+        "d6d8",
+        "e8d9",
+        "f8f6",
+        "f9e8",
+        "f6f8",
+        "e8f9",
+        "d8d6",
+        "d9e8"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-157",
+      "sourceLine": 653,
+      "diagramHint": null,
+      "fen": "3ak1b2/4a4/4b4/9/2c6/2R6/9/4C4/4A4/2BAK1B2 b",
+      "moves": [
+        "c5g5",
+        "c4g4",
+        "g5c5",
+        "g4c4",
+        "c5g5",
+        "c4g4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-158",
+      "sourceLine": 654,
+      "diagramHint": null,
+      "fen": "3ak1b2/4a4/4b4/9/2c6/2R6/9/4C4/4A4/2BAK1B2 b",
+      "moves": [
+        "c5g5",
+        "c4g4",
+        "g5c5",
+        "g4c4",
+        "c5g5",
+        "c4g4",
+        "g5c5"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-159",
+      "sourceLine": 655,
+      "diagramHint": null,
+      "fen": "3aka3/r4rN2/6P2/p3P3p/9/6R2/P4c2P/4B4/4A4/3AK1B2 w",
+      "moves": [
+        "g4g3",
+        "f3f4",
+        "g3g4",
+        "f4f3",
+        "g4g3",
+        "f3f4",
+        "g3g4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-160",
+      "sourceLine": 656,
+      "diagramHint": null,
+      "fen": "3aka3/r4rN2/6P2/p3P3p/9/6R2/P4c2P/4B4/4A4/3AK1B2 w",
+      "moves": [
+        "g4g3",
+        "f3f4",
+        "g3g4",
+        "f4f3",
+        "g4g3",
+        "f3f4"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-161",
+      "sourceLine": 657,
+      "diagramHint": null,
+      "fen": "4ka3/1r3cN2/5aP2/p3P3p/9/6R2/P4c2P/4B4/4A4/3AK1B2 w",
+      "moves": [
+        "g4g3",
+        "f3f4",
+        "g3g4",
+        "f4f3",
+        "g4g3",
+        "f3f4",
+        "g3g4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-162",
+      "sourceLine": 658,
+      "diagramHint": null,
+      "fen": "4ka3/1r3cN2/5aP2/p3P3p/9/6R2/P4c2P/4B4/4A4/3AK1B2 w",
+      "moves": [
+        "g4g3",
+        "f3f4",
+        "g3g4",
+        "f4f3",
+        "g4g3",
+        "f3f4"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-163",
+      "sourceLine": 659,
+      "diagramHint": null,
+      "fen": "4ka3/2r2cN2/5aP2/p3P3p/9/6R2/P4c2P/9/4A4/2BAK1B2 w",
+      "moves": [
+        "g4g3",
+        "f3f4",
+        "g3g4",
+        "f4f3",
+        "g4g3",
+        "f3f4",
+        "g3g4"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-164",
+      "sourceLine": 660,
+      "diagramHint": null,
+      "fen": "4ka3/2r2cN2/5aP2/p3P3p/9/6R2/P4c2P/9/4A4/2BAK1B2 w",
+      "moves": [
+        "g4g3",
+        "f3f4",
+        "g3g4",
+        "f4f3",
+        "g4g3",
+        "f3f4"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-165",
+      "sourceLine": 663,
+      "diagramHint": null,
+      "fen": "4kab2/4a4/4b4/3rC2R1/9/9/4n4/4B4/4A4/4KAB1c w",
+      "moves": [
+        "h6i6",
+        "i0h0",
+        "i6h6",
+        "h0i0",
+        "h6i6",
+        "i0h0",
+        "i6h6"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-166",
+      "sourceLine": 666,
+      "diagramHint": null,
+      "fen": "1cbak4/R3a4/4b4/7P1/9/2P6/3pp4/8r/9/3AKA3 w",
+      "moves": [
+        "a8b8",
+        "b9a9",
+        "b8a8",
+        "a9b9",
+        "a8b8",
+        "b9a9",
+        "b8a8"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-167",
+      "sourceLine": 667,
+      "diagramHint": null,
+      "fen": "1cbak4/R3a4/4b2C1/7P1/9/2P6/3pp4/8r/9/3AKA3 w",
+      "moves": [
+        "a8b8",
+        "b9a9",
+        "b8a8",
+        "a9b9",
+        "a8b8",
+        "b9a9",
+        "b8a8",
+        "a9b9",
+        "a8b8"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-168",
+      "sourceLine": 670,
+      "diagramHint": null,
+      "fen": "1cbak4/R3a4/9/9/7r1/9/9/4B4/4A4/3AKCB2 w - - 0 1",
+      "moves": [],
+      "sourceJudgment": "undecided",
+      "expectedWinner": null
+    },
+    {
+      "id": "orange-169",
+      "sourceLine": 672,
+      "diagramHint": null,
+      "fen": "1cbak4/R3a4/4b2C1/7P1/9/2P6/3pp4/8r/9/3AKA3 w",
+      "moves": [
+        "a8b8",
+        "b9a9",
+        "b8a8",
+        "a9b9",
+        "a8b8",
+        "b9a9",
+        "b8a8",
+        "a9b9"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-170",
+      "sourceLine": 673,
+      "diagramHint": null,
+      "fen": "2b1k1r2/9/4b4/9/9/2P3P2/1R7/2n1B4/4A4/4KABC1 w",
+      "moves": [
+        "b3c3",
+        "c2b0",
+        "c3b3",
+        "b0c2",
+        "b3c3",
+        "c2b0",
+        "c3b3"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "black"
+    },
+    {
+      "id": "orange-171",
+      "sourceLine": 674,
+      "diagramHint": null,
+      "fen": "2bak4/4a4/4b4/9/2p2r3/r8/1R7/4B4/9/1R2K1B2 w",
+      "moves": [
+        "b3b4",
+        "a4a3",
+        "b4b3",
+        "a3a4",
+        "b3b4",
+        "a4a3"
+      ],
+      "sourceJudgment": "draw",
+      "expectedWinner": "draw"
+    },
+    {
+      "id": "orange-172",
+      "sourceLine": 677,
+      "diagramHint": null,
+      "fen": "2bakab2/6c2/2C3c2/p1N1p3p/1R1P5/5r3/P2CP1n1P/4B1p2/4A4/4KAB2 w",
+      "moves": [
+        "b5b8",
+        "f9e8",
+        "c7c8",
+        "e8f9",
+        "c8c7",
+        "f9e8",
+        "c7c8",
+        "e8f9",
+        "c8c7",
+        "f9e8"
+      ],
+      "sourceJudgment": "win",
+      "expectedWinner": "red"
+    },
+    {
+      "id": "orange-173",
+      "sourceLine": 678,
+      "diagramHint": null,
+      "fen": "2bakab2/6c2/2C3c2/p1N1p3p/1R1P5/5r3/P2CP1n1P/4B1p2/4A4/4KAB2 w",
+      "moves": [
+        "b5b8",
+        "f9e8",
+        "c7c8",
+        "e8f9",
+        "c8c7",
+        "f9e8",
+        "c7c8",
+        "e8f9",
+        "c8c7"
+      ],
+      "sourceJudgment": "loss",
+      "expectedWinner": "red"
+    }
+  ]
+}
