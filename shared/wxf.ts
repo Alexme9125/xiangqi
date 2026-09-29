@@ -45,8 +45,12 @@ function protectedVictim(board: Piece[], attacker: Piece, victim: Piece, rules: 
   const enemyAtTarget = captured.find(p => p.id === attacker.id)!;
   for (const defender of captured) {
     if (defender.side !== victim.side) continue;
-    // Sliding protection is defined in the original occupancy. Using only
-    // occupancy after the hypothetical capture misclassifies cannon screens.
+    // This is WXF chase protection, not ordinary recapture move generation.
+    // Classify rook/cannon rays using the ORIGINAL occupancy, including an
+    // attacking piece that currently serves as a cannon screen. Then test the
+    // defender's king safety on the hypothetical post-capture board below.
+    // WXF diagrams 39–41 require this distinction; see section 4.2 / algorithms
+    // 2–3 at https://arxiv.org/html/2412.17334v1#S4.SS2 and the fixture tests.
     const canDefend = defender.kind === 'rook' || defender.kind === 'cannon'
       ? alignedDefender(board, defender, victim)
       : rules.pseudo(captured, defender).some(move => sameTarget(move, enemyAtTarget));

@@ -53,6 +53,8 @@
 
 `shared/wxf.ts` 根据 WXF 原文及 Tan、Watkinson Medina 的 [Complete Implementation of WXF Chinese Chess Rules（2024）](https://arxiv.org/abs/2412.17334) 中的判定思路独立编写，没有复制其引擎代码。
 
+车、炮的长捉保护分类采用假设吃子前的占位与炮架，再在假设吃子后的棋盘检验保护方将帅安全。这里的分类不是普通回吃走法生成。官方图 39–41（第 49–50 页）及上述论文第 4.2 节说明这一特殊点；若把车炮占位统一换成吃子后状态，会使现有 9 组裁定偏离来源。`orange-056` 与 `orange-107` 另有具名回归测试，分别防止错判和棋和错判长捉负。
+
 测试数据记录作者公开的 [Orange Xiangqi 棋例事实](https://github.com/danieltan1517/orange-xiangqi/blob/e30960b4924710dc0fb332bb4cb5955cc04cc1f3/tests.jai)：173 组 FEN、ICCS 着法及裁定，JSON 内保留来源、提交和行号。173 组着法均通过合法性重放；其中 170 组末态可重复的判例，在保留原有循环路线的续着中获得一致裁定。2 组未定局面与 1 组末态没有重复的片段只验证事实重放，不计入裁定覆盖。
 
 判例测试覆盖复杂长捉边界，但不代表赛事机构认证；人机棋力也未做等级标定。

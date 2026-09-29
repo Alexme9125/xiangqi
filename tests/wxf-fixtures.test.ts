@@ -86,6 +86,34 @@ test('all 173 sourced FEN and ICCS rows are parseable and legal', () => {
   }
 });
 
+test('WXF 39–41 keeps the attacker as a current cannon screen when classifying protection', () => {
+  const source = data.cases.find(c => c.id === 'orange-056')!;
+  const cycle = source.moves.slice(0, 4);
+  let state = fromFen(source.fen);
+  for (const encoded of [...cycle, ...cycle, ...cycle, ...cycle]) {
+    if (state.status === 'finished') break;
+    state = applyMove(state, iccs(encoded));
+  }
+  assert.equal(state.winner, 'black');
+  assert.equal(state.reason, 'perpetual-chase');
+  // Recomputing sliding rays only after the hypothetical capture incorrectly
+  // removes the black rook's role as a screen and changes this to a draw.
+});
+
+test('WXF current sliding protection preserves the permitted alternating double-rook cycle', () => {
+  const source = data.cases.find(c => c.id === 'orange-107')!;
+  const cycle = source.moves.slice(0, 8);
+  let state = fromFen(source.fen);
+  for (const encoded of [...cycle, ...cycle, ...cycle, ...cycle]) {
+    if (state.status === 'finished') break;
+    state = applyMove(state, iccs(encoded));
+  }
+  assert.equal(state.winner, 'draw');
+  assert.equal(state.reason, 'repetition');
+  // The same post-capture-ray substitution incorrectly charges red with a
+  // perpetual chase here. This guards the opposite direction of misjudgment.
+});
+
 test('published WXF repetition cycles reach their factual winner on continued play', () => {
   const failures: string[] = [];
   let exercised = 0;
